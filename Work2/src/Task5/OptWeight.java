@@ -4,23 +4,26 @@ public class OptWeight {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/**
+		 * РљР»Р°СЃСЃ РѕРїСЂРµРґРµР»РµРЅРёСЏ РѕРїС‚РёРјР°Р»СЊРЅРѕСЃС‚Рё РІРµСЃР°
+		 */
 		Scanner sc = new Scanner(System.in);
 		int w,h;
-		System.out.print("Введите свой вес=") ;
+		System.out.print("Р’РІРµРґРёС‚Рµ СЃРІРѕР№ РІРµСЃ=") ;
 		w=sc.nextInt();
 		System.out.println();
-		System.out.print("Введите свой рост=");
+		System.out.print("Р’РІРµРґРёС‚Рµ СЃРІРѕР№ СЂРѕСЃС‚=");
 		h=sc.nextInt();
 		System.out.println();
 		if(w<h-w){
-			System.out.println("Вам стоит набрать вес");
+			System.out.println("Р’Р°Рј СЃС‚РѕРёС‚ РЅР°Р±СЂР°С‚СЊ РІРµСЃ");
 		}
 		else{
 			if (w>h-20){
-				System.out.println("Вам стоит похудеть");
+				System.out.println("Р’Р°Рј СЃС‚РѕРёС‚ РїРѕС…СѓРґРµС‚СЊ");
 			}
 			else{
-				System.out.println("Ваш вес в пределах нормы");
+				System.out.println("Р’Р°С€ РІРµСЃ РІ РїСЂРµРґРµР»Р°С… РЅРѕСЂРјС‹");
 			}
 		}		
 		sc.close();

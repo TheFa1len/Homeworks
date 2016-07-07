@@ -2,10 +2,10 @@ package Task1;
 import java.util.Scanner;
 public class SeparateString {
 
-	public static void main(String[] args) { /** Данный класс производит деление на пополам введённую случайную фразу/слово/предложение с клавиатуры*/
+	public static void main(String[] args) { /** РєР»Р°СЃСЃ РґРµР»РµРЅРёСЏ СЃС‚СЂРѕРєРё РЅР° РґРІРµ РїРѕРїРѕРґР»Р°Рј +- 1 СЃРёРјРІРѕР»*/
 		Scanner sc = new Scanner (System.in);
 		// TODO Auto-generated method stub
-		System.out.println("Введите фразу для деления");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ РґР»СЏ РґРµР»РµРЅРёСЏ ");
 		String s1,s2,s3;
 		s1=sc.nextLine();
 		int n=0;

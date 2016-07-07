@@ -6,6 +6,9 @@ public class DaysOfWeek {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/**
+		 * Класс выведения дня недели по номеру дня.
+		 */
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter day of week ");
 		String s1;

@@ -6,48 +6,51 @@ public class RUB {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/**
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		 */
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Введите сумму ");
+		System.out.print("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ ");
 		String s1 = sc.nextLine();
 		int sum = Integer.parseInt(s1);
 		if (sum <0 && sum > 999) {
-			System.out.println("Введено не корректная сумма");
+			System.out.println("Р’РІРµРґРµРЅР° РЅРµРІРµСЂРЅР°СЏ СЃСѓРјРјР°");
 		}
 		else {
 			if (sum > 10 && sum < 15) {
-				System.out.println(sum + " рублей");
+				System.out.println(sum + " СЂСѓР±Р»РµР№");
 			} else {
 				int k = sum % 10;
 				switch (k) {
 				case 0:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 				case 1:
-					System.out.println(sum + " рубль");
+					System.out.println(sum + " СЂСѓР±Р»СЊ");
 					break;
 				case 2:
-					System.out.println(sum + " рубля");
+					System.out.println(sum + " СЂСѓР±Р»СЏ");
 					break;
 				case 3:
-					System.out.println(sum + " рубля");
+					System.out.println(sum + " СЂСѓР±Р»СЏ");
 					break;
 				case 4:
-					System.out.println(sum + " рубля");
+					System.out.println(sum + " СЂСѓР±Р»СЏ");
 					break;
 				case 5:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 				case 6:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 				case 7:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 				case 8:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 				case 9:
-					System.out.println(sum + " рублей");
+					System.out.println(sum + " СЂСѓР±Р»РµР№");
 					break;
 
 				}

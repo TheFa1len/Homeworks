@@ -6,17 +6,20 @@ public class Bissextile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/** 
+		 * РљР»Р°СЃСЃ РЅР°С…РѕР¶РґРµРЅРёРµ РІРёСЃРѕРєРѕСЃРЅРѕРіРѕ РіРѕРґР°
+		 */
 		Scanner sc = new Scanner(System.in);
 		String s1;
-		System.out.print("Введите год");
+		System.out.print("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ");
 		s1 = sc.nextLine();
 		System.out.println();
 		int y = Integer.parseInt(s1);
 		if (y % 4 == 0) {
 			if (y % 100 != 0 && y % 400 != 0) {
-				System.out.println("Этот год високосный");
+				System.out.println("Р­С‚РѕС‚ РіРѕРґ РІРёСЃРѕРєРѕСЃРЅС‹Р№");
 			} else {
-				System.out.println("Этот год не високосный");
+				System.out.println("Р­С‚РѕС‚ РіРѕРґ РЅРµ РІРёСЃРѕРєРѕСЃРЅС‹Р№");
 			}
 		}
 		sc.close();

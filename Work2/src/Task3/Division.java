@@ -4,20 +4,22 @@ public class Division {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/** 
+		 * РљР»Р°СЃСЃ РѕРїСЂРµРґРµР»РµРЅРёРµ С‡Р°СЃС‚РЅРѕРіРѕ РґРІСѓС… С†РµР»С‹С… С‡РёСЃРµР»пїЅ*/
 		Scanner sc=new Scanner(System.in);
 		String a,b;
-		System.out.print("Введите целое число 1=");
+		System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ 1=");
 		a=sc.nextLine();
 		System.out.println();
-		System.out.print("Введите целое число 2=");
+		System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ 2=");
 		b=sc.nextLine();
 		System.out.println();
 		int x=Integer.parseInt(a), y=Integer.parseInt(b);
 		if(y!=0&&x!=0){
-			System.out.println("Частное 1=" + x/y + " " + "Частное 2=" + y/x);
+			System.out.println("Р§Р°СЃС‚РЅРѕРµ 1=" + x/y + " " + "Р§Р°СЃС‚РЅРѕРµ 2=" + y/x);
 		}
 		else{
-			System.out.println("Вы ввели нулевое значение");
+			System.out.println("Р’С‹ РІРІРµР»Рё РЅСѓР»РµРІРѕРµ С‡РёСЃР»Рѕ");
 		}
 		sc.close();
 

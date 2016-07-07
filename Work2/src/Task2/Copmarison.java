@@ -5,21 +5,21 @@ public class Copmarison {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/** 
-		 * Данный класс сравнивает два введённых значения с клавиатуры.
+		 * РєР»Р°СЃСЃ СЃСЂР°РІРЅРµРЅРёСЏ РґРІСѓС… С‡РёСЃРµР»
 		 */
 		Scanner sc= new Scanner (System.in);
 		String s1,s2;
-		System.out.print("Введите первое число=");
+		System.out.print("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ=");
 		s1=sc.nextLine();
 		System.out.println();
-		System.out.print("Введите второе число=");
+		System.out.print("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ=");
 		s2=sc.nextLine();
 		System.out.println();
 		if(s1.equals(s2)){
-			System.out.println("Числа одинаковы");
+			System.out.println("Р§РёСЃР»Р° СЂР°РІРЅС‹");
 		}
 		else{
-			System.out.println("Числа различны");
+			System.out.println("Р§РёСЃР»Р° РЅРµ СЂР°РІРЅС‹");
 		}
 		sc.close();
 		
