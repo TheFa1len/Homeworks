@@ -41,13 +41,7 @@ abstract public class Equip implements Wear {
 	public String toString() {
 		return label + " " + price;
 	}
-	 public int compare(Equip o1, Equip o2) {
-		 String tmp1 = String.valueOf(o1.weight);
-		 String tmp2 = String.valueOf(o2.weight);
-         return o1.toString().compareTo(o2.toString());
- }
-	
-
+	// Method that sort equipment by weight taking them from list of motorcyclist
 	public static void sortWeightList (List<Motorcyclist> mList){
 		List<Equip> equip = new ArrayList<>();
 		for (Motorcyclist tmp : mList ){
@@ -55,17 +49,7 @@ abstract public class Equip implements Wear {
 			equip.add(tmp.gloves);
 			equip.add(tmp.jacket);
 		}
-		Equip temp = null;
-		/*for(int j = mList.size()-1; j > 0; j--){
-			for(int i = 0 ; i < j; i++){
-				if(equip.get(i).weight > equip.get(i+1).weight){
-					temp = equip.get(i);
-					equip.set(i,equip.get(i+1)) ;
-					equip.set((i+1),temp);
-	                }
-	           }
-	       }*/
-		Collections.sort(equip, new Comparator<Equip>(){
+		Collections.sort(equip, new Comparator<Equip>(){//making default class of comparator
 			public int compare(Equip o1, Equip o2) {
 			 String tmp1 = String.valueOf(o1.weight);
 			 String tmp2 = String.valueOf(o2.weight);

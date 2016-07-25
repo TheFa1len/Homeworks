@@ -47,11 +47,11 @@ public class Motorcyclist {
 	public Jacket getJacket() {
 		return jacket;
 	}
-
+// Summary of total cost of object equioment
 	public int totalCost() {
 		return helmet.price + gloves.price + jacket.price;
 	}
-
+// Sorting of equip weight of one object
 	public void sortWeightAlone() {
 		Equip list[] = new Equip[4];
 		list[0] = helmet;
@@ -69,6 +69,7 @@ public class Motorcyclist {
 		System.out.println("Sorted equip by weight " + list[0].label + " - " + list[0].weight + ", " + list[1].label + " - " + list[1].weight + ", " + list[2].label + " - " + list[2].weight);
 		
 	}
+	// Show equipment of object in price selection
 	public void showIfFit(int low, int high){
 		System.out.println("In borders of cost are:");
 		if (helmet.price>low && helmet.price<high)
@@ -78,6 +79,7 @@ public class Motorcyclist {
 		if (jacket.price>low && jacket.price<high)
 			System.out.println("jacket - " + jacket.price);
 	}
+	// Show equipment of list of objects in price selection
 	public static void showIfFitArray(int low, int high, List<Motorcyclist> mList){
 		System.out.println("In borders of cost are:");
 		for (Motorcyclist tmp : mList){
@@ -89,6 +91,7 @@ public class Motorcyclist {
 			System.out.println(tmp.jacket.label + " - " + tmp.jacket.price);
 		}
 	}
+	//Checking allowmnet to drive bike with our drive license
 	public void checkLicense() throws LicsenseException{
 		if(license.charAt(license.length()-1)!='A' && license.charAt(license.length()-1)!='a'){
 			StringBuffer tmp = new StringBuffer (license);
@@ -98,16 +101,6 @@ public class Motorcyclist {
 			}
 		
 	}
-
-	/*static Comparator<Equip> snorderer = new Comparator<Equip>() {
-
-		public int compare(Equip o1, Equip o2) {
-			String tmp1 = String.valueOf(o1.weight);
-			String tmp2 = String.valueOf(o2.weight);
-			return tmp2.compareTo(tmp2);
-		}
-	};*/
-	
 
 	public static void main(String[] args) {
 		Motorcyclist man = new Motorcyclist ("Ivan","1034d");
