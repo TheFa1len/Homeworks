@@ -1,7 +1,18 @@
-package ClassProject;
+package Module1;
 
-public class LicsenseException extends Exception{
-	public LicsenseException(String msg){
-		super (msg);
+/**
+ * Eception class for license error
+ * 
+ * @author user
+ *
+ */
+public class LicsenseException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7817413365089943813L;
+
+	public LicsenseException(String msg) {
+		super(msg);
 	}
 }
